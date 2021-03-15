@@ -1,0 +1,472 @@
+/*RESETS*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*...*/
+/*TYPOGRAPHY*/
+@font-face {
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-family: "Poppins-Regular";
+}
+
+@font-face {
+  src: url("../fonts/AkayaKanadaka-Regular.ttf");
+  font-family: "AkayaKanadaka";
+}
+
+@font-face {
+  src: url("../fonts/Quicksand-Regular.ttf");
+  font-family: "Quicksand-Regular";
+}
+
+@font-face {
+  src: url("../fonts/Quicksand-Bold.ttf");
+  font-family: "Quicksand-Bold";
+}
+
+/*...*/
+/*BASE*/
+body {
+  font-family: "Quicksand-Regular";
+  cursor: default;
+  background-color: white;
+}
+
+/*Navbar*/
+header {
+  height: 3.5rem;
+  background-color: #3590c5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+.nav-logo {
+  color: whitesmoke;
+  font-size: 14pt;
+  font-family: "AkayaKanadaka";
+}
+
+.nav-items {
+  margin-left: auto;
+}
+
+.nav-items a {
+  font-family: "Poppins-Regular";
+  font-size: 12pt;
+}
+
+.nav-contact {
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  color: #3590c5;
+  background: whitesmoke;
+}
+
+.nav-contact:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+}
+
+/*...*/
+/*Home*/
+#home {
+  margin: 5.5rem 1rem 0 1rem;
+  max-width: 1100px;
+}
+
+.home-data {
+  text-align: center;
+}
+
+.home-title {
+  margin-bottom: 1.5rem;
+  font-size: 30pt;
+  font-family: "Quicksand-Bold";
+  text-transform: uppercase;
+}
+
+.home-description {
+  margin-bottom: 2rem;
+  font-size: 12pt;
+}
+
+.home-button {
+  background: #3590c5;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  color: whitesmoke;
+  font-size: 13pt;
+  letter-spacing: 1px;
+  font-family: "Poppins";
+  -webkit-transition: all 270ms ease-in;
+  transition: all 270ms ease-in;
+}
+
+.home-button:hover {
+  background: transparent;
+  border: 1px solid #3590c5;
+  color: #3590c5;
+}
+
+.home-image {
+  margin-top: 3rem;
+}
+
+.home-image img {
+  width: 100%;
+}
+
+/*...*/
+/*Travel section*/
+#travel {
+  margin: 2rem 1rem 0 1rem;
+  max-width: 1100px;
+}
+
+.travel-data {
+  text-align: center;
+}
+
+.travel-title {
+  font-family: "Quicksand-Bold";
+  text-transform: capitalize;
+  color: #3590c5;
+  font-size: 25pt;
+  margin-bottom: 1.5rem;
+  color: #3590c5;
+}
+
+.travel-description {
+  font-size: 12pt;
+}
+
+.travel-image {
+  margin-bottom: 1rem;
+}
+
+.travel-image img {
+  width: 100%;
+}
+
+/*...*/
+/*Schedule section*/
+#schedule {
+  margin: 2rem 1rem 0 1rem;
+  max-width: 1100px;
+}
+
+.schedule-data {
+  text-align: center;
+}
+
+.schedule-title {
+  color: #3590c5;
+  font-family: "Quicksand-Bold";
+  font-size: 25pt;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-description {
+  margin-bottom: 1rem;
+}
+
+.schedule-image {
+  margin-bottom: 1rem;
+}
+
+.schedule-image img {
+  width: 100%;
+}
+
+/*...*/
+/*Serenity section*/
+#serenity {
+  margin: 2rem 0.8rem 0 0.8rem;
+  max-width: 1100px;
+}
+
+.serenity-data {
+  text-align: center;
+}
+
+.serenity-title {
+  color: #3590c5;
+  font-family: "Quicksand-Bold";
+  font-size: 25pt;
+  margin-bottom: 1.5rem;
+}
+
+.serenity-description {
+  margin-bottom: 1rem;
+}
+
+.serenity-image {
+  margin: 1rem 0;
+}
+
+.serenity-image img {
+  width: 100%;
+}
+
+/*...*/
+/*Appreciation section*/
+#appreciation {
+  margin: 2rem 1rem 0 1rem;
+  max-width: 1100px;
+}
+
+.appreciation-data {
+  text-align: center;
+}
+
+.appreciation-title {
+  color: #3590c5;
+  font-family: "Quicksand-Bold";
+  font-size: 25pt;
+  margin-bottom: 1.5rem;
+}
+
+.appreciation-description {
+  margin-bottom: 1rem;
+}
+
+.appreciation-image {
+  margin: 1rem 0;
+}
+
+.appreciation-image img {
+  width: 100%;
+}
+
+/*...*/
+/*Footer*/
+footer {
+  height: 5rem;
+  background-color: #3590c5;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-social {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+ion-icon {
+  color: whitesmoke;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+ion-icon:nth-child(1):hover {
+  color: blue;
+}
+
+ion-icon:nth-child(2):hover {
+  color: #3cd8dd;
+}
+
+ion-icon:nth-child(3):hover {
+  color: green;
+}
+
+ion-icon:nth-child(4):hover {
+  color: #e01537;
+}
+
+.footer-copyright {
+  font-family: "AkayaKanadaka";
+  color: white;
+  text-align: center;
+}
+
+/*...*/
+/*...*/
+/*MEDIA QUERIES*/
+@media screen and (min-width: 700px) {
+  .home-description,
+  .travel-description,
+  .schedule-description,
+  .serenity-description,
+  .appreciation-description {
+    font-size: 15pt;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  #home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .home-data {
+    text-align: left;
+  }
+  .home-title {
+    font-size: 40pt;
+    padding-bottom: 1rem;
+  }
+  .home-description {
+    padding-bottom: 1rem;
+  }
+  .home-image {
+    margin-top: 1.5rem;
+  }
+  #travel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  .travel-data {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .travel-title {
+    font-size: 30pt;
+    padding-bottom: 1rem;
+  }
+  .travel-image {
+    margin-top: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  #schedule {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+  }
+  .schedule-data {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .schedule-title {
+    font-size: 30pt;
+  }
+  .schedule-span {
+    margin: 0 7rem;
+  }
+  #serenity {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0.3rem;
+  }
+  .serenity-data {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .serenity-title {
+    font-size: 30pt;
+  }
+  .serenity-image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  #appreciation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+  }
+  .appreciation-data {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .appreciation-title {
+    font-size: 30pt;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-social {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #home,
+  #schedule,
+  #travel,
+  #serenity,
+  #appreciation {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-data {
+    margin-top: 2rem;
+  }
+  .travel-data {
+    margin-top: 8rem;
+  }
+  .schedule-data {
+    margin-top: 2rem;
+  }
+  .serenity-data {
+    margin-top: 6rem;
+  }
+  .appreciation-data {
+    margin-top: 4rem;
+  }
+}
+
+/*...*/
+/*# sourceMappingURL=main.css.map */
