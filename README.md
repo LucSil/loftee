@@ -1,2 +1,4 @@
-This is not a dynamic/functional page.
-It was created for practice purposes.
+# Landing page.
+* A simple landing page created for practice purposes.
+* Developed with SCSS
+# https://lucsil.github.io/loftee/
